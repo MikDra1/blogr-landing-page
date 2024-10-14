@@ -1,0 +1,125 @@
+.headerMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  padding-block: 2rem;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.headerMobileUl {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  width: 90dvw;
+  height: 77dvh;
+  list-style: none;
+  text-align: start;
+  justify-items: center;
+  padding-block: 1rem;
+  box-shadow: 50px 50px 150px rgba(0, 0, 0, .3);
+  border-radius: 0.3rem;
+  font-weight: 700;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerMobileUlContainer {
+  width: 90%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.headerMobileUl .headerMobileUlContainer div {
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: "Overpass", sans-serif;
+  color: #576372;
+}
+
+
+
+.headerMobile img {
+  z-index: 3;
+}
+
+.mobileUlOpen.mobileUlOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.headerMobileSocials.headerMobileSocials {
+  position: absolute;
+  border-bottom: none;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.positionFixed {
+  position: fixed;
+}
+
+.headerDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 4rem;
+  margin-inline: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-inline: 12.5%;
+}
+
+.headerDesktop ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.headerDesktop li {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.headerDesktop li::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1.5px;
+  transition: all 0.3s;
+}
+
+.headerDesktopEnd {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (min-width: 450px) {
+  .headerDesktop li:hover::after {
+    width: 50%;
+  }
+}

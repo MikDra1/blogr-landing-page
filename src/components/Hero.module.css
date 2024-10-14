@@ -1,0 +1,21 @@
+.hero {
+  height: 80dvh;
+  background-image: url("../../public/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(to bottom, var(--Very-light-red), var(--Light-red));
+  background-position: 35% 35%;
+  background-repeat: no-repeat;
+  padding-top: 25dvh;
+  padding-inline: 5%;
+  border-radius: 0 0 0 6rem;
+}
+
+
+@media (min-width: 37.5em) {
+  .hero {
+    background-image: url("../../public/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to bottom, var(--Very-light-red), var(--Light-red));
+  background-position: 35% 50%;
+  padding-top: 30dvh;
+
+  }
+}
